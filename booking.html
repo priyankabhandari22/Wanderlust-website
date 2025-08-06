@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking - Wanderlust</title>
+  <link rel="stylesheet" href="/main/book.css" />
+</head>
+<body>
+
+  <main>
+    <h1>Book Your Trip</h1>
+
+    <form class="booking-form" action="#" method="post">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+      </div>
+
+      <div class="form-group">
+        <label for="destination">Destination</label>
+        <select id="destination" name="destination" required>
+          <option value="">-- Select Destination --</option>
+          <option value="paris">Paris, France</option>
+          <option value="bali">Bali, Indonesia</option>
+          <option value="newyork">New York, USA</option>
+          <option value="kyoto">Kyoto, Japan</option>
+          <option value="rome">Rome, Italy</option>
+          <option value="cape-town">Cape Town, South Africa</option>
+          <option value="sydney">Sydney, Australia</option>
+          <option value="istanbul">Istanbul, Turkey</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Travel Date</label>
+        <input type="date" id="date" name="date" required />
+      </div>
+
+      <div class="form-group">
+        <label for="people">Number of People</label>
+        <input type="number" id="people" name="people" min="1" max="20"  placeholder="Enter number of people" />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Additional Notes</label>
+        <textarea id="message" name="message" rows="4" placeholder="Any special requests..."></textarea>
+      </div>
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </main>
+
+</body>
+</html>

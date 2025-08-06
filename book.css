@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-image: url("https://t3.ftcdn.net/jpg/12/59/78/62/240_F_1259786294_pRZhQWsubdjJw21kDwWge8gOEin4CQHj.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(179, 24, 24, 0.5);
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  
+}
+h1:hover {
+  color: #05ffb0;
+  text-shadow: 2px 2px 6px rgba(13, 13, 13, 0.7);
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+main {
+  padding: 20px;
+  max-width: 1500px;
+  margin: auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 35px rgba(255, 252, 252, 0.5);
+  animation: fadeInUp 1.5s ease;
+}
+.booking-form {
+  font-family: Arial, sans-serif;
+  background-image: url("https://t3.ftcdn.net/jpg/12/69/55/68/240_F_1269556888_9QzetAdBpLa1wIzp16TVJBWDTCQlTD0d.jpg");
+  background-size: cover;
+  background-position: center;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.booking-form .form-group {
+  margin-bottom: 20px;
+}
+
+.booking-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-style: normal;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem; 
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+  border-color: #0077b6;
+  outline: none;
+}
+
+.booking-form button {
+  background: #f5a105;
+  color: #000000;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.booking-form button:hover {
+  background: #04d1ff;
+}

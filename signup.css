@@ -1,0 +1,127 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20201101/pngtree-scene-with-geometrical-forms-the-poster-model-minimal-background-render-image_452981.jpg");
+  background-size: cover;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.signup-form {
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  width: 100%;
+  animation: fadeInUp 0.5s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.signup-form h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  color: #28a745;
+}
+
+.signup-form .form-group {
+  margin-bottom: 20px;
+}
+
+.signup-form label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #333;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #f9f9f9;
+  transition: 0.3s ease;
+}
+
+.signup-form input:focus {
+  border-color: #28a745;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(40, 167, 69, 0.1);
+  outline: none;
+}
+
+.signup-form .form-options {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.signup-form .form-options a {
+  color: #28a745;
+  text-decoration: none;
+}
+
+.signup-form .form-options a:hover {
+  text-decoration: underline;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  background: #28a745;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
+}
+
+.signup-form button:hover {
+  background: #218838;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+.login-link a {
+  color: #28a745;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+.signup-form .form-options.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+  

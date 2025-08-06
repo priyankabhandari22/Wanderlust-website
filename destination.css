@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://marketplace.canva.com/EAFJ-6rl9Q8/1/0/1600w/canva-blue-chalk-inspirational-quotes-desktop-wallpaper-_W9QJokBsD0.jpg");
+  background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px 20px;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.destination-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.destination {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.destination img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.destination:hover img {
+  transform: scale(1.05);
+}
+
+.destination h2 {
+  font-size: 1.5rem;
+  margin: 15px 0 10px;
+  color: #0077b6;
+}
+
+.destination p {
+  padding: 0 15px 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .destination p {
+    font-size: 0.95rem;
+  }
+}
